@@ -1,10 +1,14 @@
 GET http://localhost:3000/users
 
-###
-
-GET http://localhost:3000/users/1
 
 ###
+
+
+GET http://localhost:3000/users/62f2b9c9e1eae07f3ecffd55
+
+
+###
+
 
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -15,3 +19,8 @@ Content-Type: application/json
     "email": "todd@email.com"
 }
 
+
+###
+
+
+DELETE http://localhost:3000/users/62f2be30ea1c1684835cda98
