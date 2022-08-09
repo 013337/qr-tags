@@ -1,26 +1,36 @@
 GET http://localhost:3000/users
+### FETCHES ALL USERS IN DATABASE ###
 
 
-###
 
+GET http://localhost:3000/users/62f2c254460c035f4514e4a0
+### FETCHES SINGLE USERS IN DATABASE ###
 
-GET http://localhost:3000/users/62f2b9c9e1eae07f3ecffd55
-
-
-###
 
 
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "Todd",
+    "name": "Dan",
     "createdDate": "8/9/2022",
-    "email": "todd@email.com"
+    "email": "dan@email.com"
 }
+### CREATES A NEW USER IN DATABASE ###
 
 
-###
+
+PATCH http://localhost:3000/users/62f2ba75f1b5b815b723e102
+Content-Type: application/json
+
+{
+    "name": "Tim",
+    "createdDate": "8/9/2022",
+    "email": "tim@email.com"
+}
+### EDITS A USER IN DATABASE ###
 
 
-DELETE http://localhost:3000/users/62f2be30ea1c1684835cda98
+
+DELETE http://localhost:3000/users/62f2c254460c035f4514e4a0
+### DELETES A SINGLE USER IN DATABASE ###
